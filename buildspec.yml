@@ -21,11 +21,11 @@ phases:
       - ls -altr
       - printenv
       - echo $TEST_VAR
-      
+      - echo $TEST_VAR
       - echo $CODEBUILD_BUILD_NUMBER
       - echo Entered the build phase...
       - echo Build started on `date`
-      - aws s3 ls
+      - 
     finally:
       - echo This always runs even if the install command fails
   post_build:
